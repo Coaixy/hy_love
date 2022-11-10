@@ -44,8 +44,12 @@
       return null;
     }
     canshu = getQueryString("text")
+    if(canshu == null){
+      canshu = "小奕神"
+    }
     document.title = canshu+"专属"
     document.querySelector("#pop").innerHTML = canshu
+    
     /*
    * Settings
    */
